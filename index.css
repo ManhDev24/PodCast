@@ -1,0 +1,566 @@
+:root {
+  --yellow: rgb(245, 217, 140);
+  --yellow-hover: rgb(206, 165, 51);
+  --yellow-banner: rgb(255 253 245);
+  --gray-text: rgb(113 113 122);
+  --yellow-text: rgb(254 240 138);
+  --dark-blue: rgb(24 24 27);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", serif;
+}
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+/*Navbar*/
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo > img {
+  width: 84px;
+  height: 20px;
+}
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1.5em;
+  padding-bottom: 1.5rem;
+}
+.btnContent {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.btnContent > .signUp > a > button {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 16px;
+  font-weight: 450;
+  cursor: pointer;
+  border-radius: 120px;
+  border: 0;
+  background-color: var(--yellow);
+}
+.btnContent > .signUp > a > button:hover {
+  background-color: var(--yellow-hover);
+}
+.btnContent > .login > a {
+  text-decoration: none;
+  color: black;
+}
+
+/*Banner Right*/
+.banner {
+  background-color: var(--yellow-banner);
+  height: 85vh;
+}
+.banner .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.banner-right {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.banner-left {
+  width: 40%;
+}
+.infoBlock {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.infoBlock * {
+  margin-bottom: 15px;
+}
+
+.info-title {
+  width: 80%;
+}
+
+.info-title > p {
+  font-size: 36px;
+  font-weight: 700;
+}
+.info-title > p > span {
+  color: var(--yellow);
+}
+.info-text {
+  color: var(--gray-text);
+  margin-bottom: 35px;
+}
+.infoButton > a > button {
+  padding-top: 0.85rem;
+  padding-bottom: 0.85rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 16px;
+  font-weight: 450;
+  cursor: pointer;
+  border-radius: 120px;
+  border: 0;
+  font-weight: 580;
+}
+.infoButton .triggerRight {
+  background-color: var(--yellow);
+}
+.infoButton .triggerRight:hover {
+  background-color: var(--yellow-hover);
+}
+.infoButton .triggerLeft {
+  border: 1px solid rgb(209, 203, 203);
+}
+.infoButton .triggerLeft:hover {
+  background-color: rgba(233, 230, 220, 0.87);
+}
+.infoUser {
+  display: flex;
+  gap: 20px;
+}
+.infoUser .info-ava > img {
+  width: 150px;
+  height: 48px;
+}
+
+.info-numbs {
+  display: flex;
+  flex-direction: column;
+  height: 48px;
+  width: 158px;
+}
+.info-numbs .View-numbs {
+  font-weight: 750;
+  font-size: 20px;
+  margin: 2px;
+}
+.ViewTitle {
+  font-size: 14px;
+}
+
+/*Banner Left*/
+.imageWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.imageBannerTop {
+  display: flex;
+  gap: 20px;
+}
+.imageBannerBottom {
+  display: flex;
+  gap: 20px;
+}
+.divTopImg1 {
+  display: flex;
+  align-items: flex-end;
+}
+.imageBlock {
+  position: relative;
+}
+.circleInfoPodCast {
+  width: 6rem;
+  height: 6rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 100%;
+  background-color: black;
+  position: absolute;
+  left: -28px;
+  bottom: -20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--yellow-text);
+}
+
+/*Title*/
+.title .container {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.titleWrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.titleLeft {
+  width: 60%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 30px;
+}
+.titleRight {
+  width: 40%;
+}
+.titleLeftImg2 {
+  padding-bottom: 3.5rem;
+}
+
+.titleRight {
+  display: flex;
+  flex-direction: column;
+}
+.titleRightWrapText {
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 22px;
+}
+.titleRightWrapText > span {
+  color: var(--yellow);
+}
+.titleRightContent {
+  width: 70%;
+  margin-bottom: 22px;
+}
+.titleRightContent > p {
+  color: var(--gray-text);
+}
+.titleRightWrapButton button {
+  padding-top: 0.85rem;
+  padding-bottom: 0.85rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 16px;
+  font-weight: 450;
+  cursor: pointer;
+  border-radius: 120px;
+  border: 0;
+  font-weight: 580;
+  background-color: var(--yellow);
+}
+.titleRightWrapButton button:hover {
+  background-color: var(--yellow-hover);
+}
+/* Explore */
+.explore .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.exploreTitle {
+  font-weight: 700;
+  font-size: 36px;
+}
+.exploreTitle > span {
+  color: var(--yellow);
+}
+.podCastCard {
+  background-color: var(--dark-blue);
+}
+.titleOfPodCast {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.podCastCard {
+  width: 350px;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin: 45px 10px;
+}
+
+.podCastCardImg {
+  width: 100%;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.podCastCardImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.PodCastName,
+.desc {
+  padding: 10px;
+  text-align: start;
+  color: white;
+}
+
+.PodCastName {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.desc {
+  color: white;
+}
+
+/* Audio */
+.Audio {
+  background-color: var(--yellow-banner);
+}
+.Audio .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.audioCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.AudioLeft {
+  width: 50%;
+}
+.AudioRight {
+  width: 50%;
+}
+.AudioRight {
+  display: flex;
+  gap: 30px;
+}
+.AudioRightImgL {
+  padding-top: 25px;
+}
+.AudioLeftTitle {
+  margin-bottom: 30px;
+}
+.AudioLeftTitle > p {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.AudioLeftTitle > p > span {
+  color: var(--yellow);
+}
+.AudioLeftDesc {
+  color: var(--gray-text);
+  margin-bottom: 30px;
+}
+
+.AudioLeftList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 30px;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.AudioLeftListTop {
+  display: flex;
+  gap: 30px;
+  font-weight: 700;
+}
+.AudioLeftListBottom {
+  display: flex;
+  gap: 30px;
+  font-weight: 700;
+}
+
+.AudioLeftButton > a > button {
+  padding-top: 0.85rem;
+  padding-bottom: 0.85rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 16px;
+  font-weight: 450;
+  cursor: pointer;
+  border-radius: 120px;
+  border: 0;
+  font-weight: 580;
+  background-color: var(--yellow);
+}
+
+/* Plan */
+.Plan .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.planTitle > h1 {
+  font-weight: 700;
+  font-size: 36px;
+}
+.planTitle > h1 > span {
+  color: var(--yellow);
+}
+.cardContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  gap: 30px;
+}
+.cardPlan {
+  padding: 2rem;
+  border-radius: 0.5rem;
+  height: 100%;
+  background-color: var(--yellow-banner);
+}
+.PlanePrice {
+  border: 0.7px solid rgb(204, 198, 198);
+  padding: 0.5rem;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 20px;
+  border-bottom-right-radius: 12px;
+  border-bottom-width: 2px;
+  border-left-width: 2px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 12px;
+  width: 30%;
+  text-align: center;
+}
+.PlanceType {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.PlanceBenefit {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.BenefitTrialButton > a > button {
+  padding-top: 0.85rem;
+  padding-bottom: 0.85rem;
+  padding-left: 7rem;
+  padding-right: 7rem;
+  font-size: 16px;
+  font-weight: 450;
+  cursor: pointer;
+  border-radius: 120px;
+  border: 0;
+  font-weight: 580;
+  background-color: var(--yellow);
+}
+
+/* intouch */
+.intouch {
+  margin: 0 auto;
+  margin-top: 6rem;
+}
+.intouch .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--yellow-banner);
+  margin-top: 4rem;
+}
+
+.intouchLeft {
+  width: 20%;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+.intouchLeft > h1 {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: start;
+}
+.intouchMiddle > img {
+  height: 404px;
+  width: 224px;
+  margin-top: -100px;
+}
+.intouchRight {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.intouchRight p {
+  color: var(--gray-text);
+  margin-bottom: 5px;
+}
+.intouchRight input {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  border-radius: 0.375rem;
+  width: 100%;
+  height: 2.5rem;
+  margin-bottom: 10px;
+  border-color: #71717a;
+  border-width: 1px;
+  font-size: 1rem;
+}
+.intouchRight .trigger {
+  padding-top: 0.85rem;
+  padding-bottom: 0.85rem;
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+  font-size: 16px;
+  font-weight: 450;
+  cursor: pointer;
+  border-radius: 120px;
+  border: 0;
+  font-weight: 580;
+  background-color: var(--yellow);
+}
+
+/* footer */
+
+footer .footer {
+  background-color: black;
+  height: 16vh;
+}
+.footer .container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+.footer-text > p {
+  color: white;
+}
+.footer-top img {
+  color: white;
+}
+.footer-top {
+  height: 70%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--gray-text);
+}
+.footer-bottom {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
