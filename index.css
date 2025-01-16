@@ -280,7 +280,7 @@
 }
 
 .podCastCard {
-  width: 230px;
+  width: 350px;
   border-radius: 15px;
   overflow: hidden;
   display: flex;
@@ -396,6 +396,9 @@
   font-weight: 580;
   background-color: var(--yellow);
 }
+.AudioLeftButton > a > button:hover {
+  background-color: var(--yellow-hover);
+}
 
 /* Plan */
 .Plan .container {
@@ -466,6 +469,9 @@
   font-weight: 580;
   background-color: var(--yellow);
 }
+.BenefitTrialButton > a > button:hover {
+  background-color: var(--yellow-hover);
+}
 
 /* intouch */
 .intouch {
@@ -501,6 +507,22 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+.intouchRight .submitBtn > a > button {
+  padding-top: 0.85rem;
+  padding-bottom: 0.85rem;
+  padding-left: 7rem;
+  padding-right: 7rem;
+  font-size: 16px;
+  font-weight: 450;
+  cursor: pointer;
+  border-radius: 120px;
+  border: 0;
+  font-weight: 580;
+  background-color: var(--yellow);
+}
+.intouchRight .submitBtn > a > button:hover {
+  background-color: var(--yellow-hover);
 }
 .intouchRight p {
   color: var(--gray-text);
@@ -564,137 +586,267 @@ footer .footer {
   align-items: center;
 }
 
-@media (max-width: 430px) {
+@media (max-width: 1025px) {
   .container {
-    padding: 0 10px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
-  .navbar .container {
-    align-items: center;
-    justify-content: space-around;
-  }
-
-  .btnContent {
-    gap: 10px;
-  }
-  .infoBlock {
-    justify-content: center;
-    align-items: center;
-  }
-  .info-title > p > br {
+  .banner .info-title > p > br {
     display: none;
   }
-  .infoBlock .infoButton {
+  .banner-left .divTopImg1 img {
+    width: 100%;
+  }
+  .divTopImg2 img {
+    width: 90%;
+  }
+  .divTopImg1 img {
+    width: 90%;
+  }
+  .imageBannerTop {
+    gap: 1.5rem;
+  }
+  .divBottomImg1 img {
+    width: 96%;
+  }
+  .divBottomImg2 img {
+    width: 85%;
+  }
+  .titleLet {
+    gap: 0px;
+  }
+
+  .titleLeft .titleLeftImg1 img {
+    width: 88%;
+  }
+  .titleLeft .titleLeftImg2 img {
+    width: 88%;
+  }
+  .explore .podCastCard {
+    width: 220px;
+    height: 330px;
+    border-radius: 15px;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
+    margin: 45px 10px;
+  }
+  .podCastCardImg {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    background-position: center;
+  }
+  .AudioRight {
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-left: 50px;
+  }
+  .AudioRightImgR {
+    width: 100%;
+    height: 100%;
+  }
+  .AudioRightImgR > img {
+    width: 100%;
+    height: 100%;
+  }
+  .AudioRightImgL {
+    width: 100%;
+    height: 100%;
+  }
+  .AudioRightImgL > img {
+    padding-top: 20px;
+    width: 67%;
+    height: 100%;
+  }
+}
+@media (max-width: 431px) {
+  .logo > img {
+    width: 84px;
+    height: 16px;
   }
   .banner .container {
-    flex-direction: column;
-    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
   }
-  .infoBlock .infoButton > a {
-    text-decoration: none;
+  .banner-right {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .banner-right,
-  .banner-left {
+  .info-title {
     width: 100%;
-  }
-  .divTopImg1 {
-    width: 50%;
-  }
-  .divTopImg1 > img {
-    width: 90%;
-    height: 80%;
-  }
-  .divTopImg2 {
-    width: 50%;
-  }
-  .divTopImg2 > img {
-    height: 228px;
-    width: 205px;
-  }
-  .divBottomImg1 {
-    width: 60%;
-  }
-  .divBottomImg1 > img {
-    height: 230px;
-    width: 206px;
-  }
-  .divBottomImg2 > img {
-    height: 151px;
-    width: 140px;
-  }
-  .divBottomImg2 {
-    width: 40%;
   }
   .info-title > p {
-    font-size: 28px;
-  }
-  .titleLeft,
-  .titleRight {
     width: 100%;
+    font-size: 30px;
+    text-align: center;
   }
-  .titleRightWrapText {
-    font-size: 28px;
-  }
-  .titleRightContent {
-    width: 100%;
-  }
-  .explore .container {
-    padding: 2rem 0;
-  }
-  .exploreTitle {
-    font-size: 28px;
-  }
-  .podCastCard {
-    width: 100%;
-    margin: 20px 0;
-  }
-  .Audio .container {
-    flex-direction: column;
-  }
-  .AudioLeft,
-  .AudioRight {
-    width: 100%;
-  }
-  .AudioRight {
-    flex-direction: column;
-    gap: 10px;
-  }
-  .Plan .container {
-    padding: 2rem 0;
-  }
-  .planTitle > h1 {
-    font-size: 28px;
-  }
-  .cardContent {
-    flex-direction: column;
-    gap: 20px;
-  }
-  .intouch .container {
-    flex-direction: column;
-    padding: 2rem 0;
-  }
-  .intouchLeft,
-  .intouchMiddle,
-  .intouchRight {
+  .info-text {
     width: 100%;
     text-align: center;
   }
-  .intouchMiddle > img {
-    margin: 0 auto;
-  }
-  footer .footer {
-    height: auto;
-    padding: 2rem 0;
-  }
-  .footer-top {
+  .infoButton {
+    display: flex;
+    width: 100%;
     flex-direction: column;
-    padding: 1rem 0;
+    align-items: center;
+    justify-content: center;
   }
-  .footer-bottom {
-    padding: 1rem 0;
+  .infoButton > a {
+    margin-bottom: 0;
+  }
+  .infoUser {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
+  .banner-left {
+    width: 100%;
+  }
+  .title .titleWrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .titleLeft {
+    width: 100%;
+    gap: 0px;
+  }
+  .titleRight {
+    width: 100%;
+  }
+  .titleLeftImg1 {
+    width: 100%;
+  }
+  .titleLeftImg1 > img {
+    width: 100%;
+  }
+  .titleLeftImg2 {
+    width: 100%;
+  }
+  .titleLeftImg2 > img {
+    width: 100%;
+  }
+  .titleRightWrapText {
+    font-size: 30px;
+  }
+  .explore .exploreTitle {
+    width: 100%;
+    font-size: 30px;
+  }
+  .titleOfPodCast {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .titleOfPodCast .podCastCard {
+    width: 350px;
+    height: 430px;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: 45px 10px;
+  }
+  .podCastCardImg {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    background-position: center;
+  }
+  .Audio .container .audioCenter {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+  .AudioLeft {
+    width: 100%;
+  }
+  .AudioRight {
+    width: 100%;
+    margin: 0;
+  }
+  .AudioLeftList {
+    display: flex;
+    flex-direction: column;
+  }
+  .AudioLeftListTop {
+    display: flex;
+    flex-direction: column;
+  }
+  .AudioLeftListBottom {
+    display: flex;
+    flex-direction: column;
+  }
+  .AudioLeftTitle > p {
+    font-size: 30px;
+  }
+  .Plan .planTitle {
+    width: 100%;
+  }
+  .Plan .planTitle > h1 {
+    font-size: 30px;
+  }
+  .cardContent {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .intouch .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .intouchLeft {
+    width: 100%;
+  }
+  .intouchLeft > h1 {
+    font-size: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+  .intouchLeft > h1 > br {
+    display: none;
+  }
+  .intouchMiddle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .intouchMiddle img {
+    width: 50%;
+    height: 100%;
+  }
+  .intouchRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .intouchRight > div > p {
+    text-align: start;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+  .intouchRight .trigger {
+    padding-top: 0.85rem;
+    padding-bottom: 0.85rem;
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
+    font-size: 16px;
+    font-weight: 450;
+    cursor: pointer;
+    border-radius: 120px;
+    border: 0;
+    font-weight: 580;
+    background-color: var(--yellow);
+    margin-bottom: 20px;
   }
 }
