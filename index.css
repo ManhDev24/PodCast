@@ -63,7 +63,6 @@
 /*Banner Right*/
 .banner {
   background-color: var(--yellow-banner);
-  height: 85vh;
 }
 .banner .container {
   display: flex;
@@ -74,14 +73,14 @@
 }
 
 .banner-right {
-  width: 60%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .banner-left {
-  width: 40%;
+  width: 45%;
 }
 .infoBlock {
   width: 100%;
@@ -281,7 +280,7 @@
 }
 
 .podCastCard {
-  width: 350px;
+  width: 230px;
   border-radius: 15px;
   overflow: hidden;
   display: flex;
@@ -337,10 +336,10 @@
   align-items: center;
 }
 .AudioLeft {
-  width: 50%;
+  width: 40%;
 }
 .AudioRight {
-  width: 50%;
+  width: 45%;
 }
 .AudioRight {
   display: flex;
@@ -563,4 +562,139 @@ footer .footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 430px) {
+  .container {
+    padding: 0 10px;
+  }
+  .navbar .container {
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .btnContent {
+    gap: 10px;
+  }
+  .infoBlock {
+    justify-content: center;
+    align-items: center;
+  }
+  .info-title > p > br {
+    display: none;
+  }
+  .infoBlock .infoButton {
+    display: flex;
+    flex-direction: column;
+  }
+  .banner .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .infoBlock .infoButton > a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner-right,
+  .banner-left {
+    width: 100%;
+  }
+  .divTopImg1 {
+    width: 50%;
+  }
+  .divTopImg1 > img {
+    width: 90%;
+    height: 80%;
+  }
+  .divTopImg2 {
+    width: 50%;
+  }
+  .divTopImg2 > img {
+    height: 228px;
+    width: 205px;
+  }
+  .divBottomImg1 {
+    width: 60%;
+  }
+  .divBottomImg1 > img {
+    height: 230px;
+    width: 206px;
+  }
+  .divBottomImg2 > img {
+    height: 151px;
+    width: 140px;
+  }
+  .divBottomImg2 {
+    width: 40%;
+  }
+  .info-title > p {
+    font-size: 28px;
+  }
+  .titleLeft,
+  .titleRight {
+    width: 100%;
+  }
+  .titleRightWrapText {
+    font-size: 28px;
+  }
+  .titleRightContent {
+    width: 100%;
+  }
+  .explore .container {
+    padding: 2rem 0;
+  }
+  .exploreTitle {
+    font-size: 28px;
+  }
+  .podCastCard {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .Audio .container {
+    flex-direction: column;
+  }
+  .AudioLeft,
+  .AudioRight {
+    width: 100%;
+  }
+  .AudioRight {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .Plan .container {
+    padding: 2rem 0;
+  }
+  .planTitle > h1 {
+    font-size: 28px;
+  }
+  .cardContent {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .intouch .container {
+    flex-direction: column;
+    padding: 2rem 0;
+  }
+  .intouchLeft,
+  .intouchMiddle,
+  .intouchRight {
+    width: 100%;
+    text-align: center;
+  }
+  .intouchMiddle > img {
+    margin: 0 auto;
+  }
+  footer .footer {
+    height: auto;
+    padding: 2rem 0;
+  }
+  .footer-top {
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+  .footer-bottom {
+    padding: 1rem 0;
+  }
 }
